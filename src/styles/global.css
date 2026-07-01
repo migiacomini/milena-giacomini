@@ -1,0 +1,213 @@
+body {
+  background: #fffdf7;
+  color: #1c1c1c;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ========================================
+   ESTRUTURA GERAL
+======================================== */
+
+main {
+  width: 32%;
+  min-width: 320px;
+  padding: 8rem 0 8rem 8rem;
+}
+
+/* ========================================
+   TIPOGRAFIA
+======================================== */
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 0.9;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   HOME
+======================================== */
+
+#typing-text::after {
+  content: "|";
+  margin-left: 2px;
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ========================================
+   NAVEGAÇÃO PRINCIPAL
+======================================== */
+
+nav {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+nav a {
+  color: #1c1c1c;
+  text-decoration: none;
+  width: fit-content;
+  position: relative;
+  letter-spacing: 0.02em;
+
+  background-image: linear-gradient(
+    #d8b4fe,
+    #d8b4fe
+  );
+
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  background-size: 0% 0.6em;
+
+  transition: background-size 0.25s ease;
+}
+
+nav a:hover {
+  background-size: 100% 0.6em;
+}
+
+/* ========================================
+   PÁGINAS INTERNAS
+======================================== */
+
+section {
+  margin-bottom: 4rem;
+}
+
+section a {
+  color: #1c1c1c;
+  text-decoration: none;
+
+  background-image: linear-gradient(
+    #fef08a,
+    #fef08a
+  );
+
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  background-size: 0% 0.6em;
+
+  transition: background-size 0.25s ease;
+}
+
+section a:hover {
+  background-size: 100% 0.6em;
+}
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+article {
+  margin-bottom: 2.5rem;
+}
+
+article h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.cargo {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.periodo {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+article .cargo:first-of-type {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+article ul {
+  font-size: 0.95rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+li::before {
+  content: "↳ ";
+}
+
+/* ========================================
+   LARGURA DAS PÁGINAS
+======================================== */
+
+.projetos,
+.sobre,
+.colaboracoes,
+.contato,
+.blog,
+.curriculo {
+  width: 55%;
+  max-width: 800px;
+}
+
+
+
+/* ========================================
+   SOBRE MIM
+======================================== */
+
+.sobre h1 {
+  margin-bottom: 3rem;
+}
+
+.sobre p {
+  margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   UTILITÁRIOS
+======================================== */
+
+.destaque {
+  background-image: linear-gradient(
+    transparent 60%,
+    #fef08a 60%
+  );
+}
+
+.intro {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}

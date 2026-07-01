@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Milena Giacomini">
+  <main>
+    <h1>Milena Giacomini</h1>
+
+    <p id="typing-text"></p>
+
+    <nav>
+      <a href="/sobre">→ Sobre mim</a>
+
+      <a href="/curriculo">→ Currículo</a>
+
+      <a href="/projetos">→ Projetos</a>
+
+      <a href="/colaboracoes">→ Colaborações</a>
+
+      <a href="/contato">→ Contato</a>
+
+      <a href="/blog">→ Blog</a>
+    </nav>
+
+    <script>
+  const text =
+    "Jornalista, especialista em estratégia de conteúdo e distribuição";
+
+  const element = document.getElementById("typing-text");
+
+  if (element) {
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 40);
+      }
+    }
+
+    type();
+  }
+</script>
+  </main>
+</Layout>

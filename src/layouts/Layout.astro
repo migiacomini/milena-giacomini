@@ -11,24 +11,31 @@ const { title = "Milena Giacomini" } = Astro.props;
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
 
-		<meta
-			name="description"
-			content="Milena Giacomini é jornalista e estrategista de conteúdo e distribuição. Trabalha com jornalismo digital, comunidade, redes sociais e produtos editoriais."
-		/>
+	<meta
+		name="description"
+		content="Milena Giacomini é jornalista e estrategista de conteúdo e distribuição. Trabalha com jornalismo digital, comunidade, redes sociais e produtos editoriais."
+	/>
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
+	<link rel="icon" href="/milena-giacomini/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/milena-giacomini/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/milena-giacomini/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="/milena-giacomini/apple-touch-icon.png" />
+<link rel="manifest" href="/milena-giacomini/site.webmanifest" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+	<meta name="generator" content={Astro.generator} />
 
-		<title>{title}</title>
-	</head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+		rel="stylesheet"
+	/>
+
+	<title>{title}</title>
+</head>
 
 	<body>
 		<slot />

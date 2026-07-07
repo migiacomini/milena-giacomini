@@ -85,7 +85,6 @@ nav a {
   background-repeat: no-repeat;
   background-position: 0 85%;
   background-size: 0% 0.6em;
-
   transition: background-size 0.25s ease;
 }
 
@@ -182,8 +181,6 @@ li::before {
   max-width: 800px;
 }
 
-
-
 /* ========================================
    SOBRE MIM
 ======================================== */
@@ -232,6 +229,10 @@ li::before {
     width: 100%;
     max-width: none;
   }
+
+  main {
+  box-sizing: border-box;
+}
 
   h1 {
     font-size: 2.5rem;

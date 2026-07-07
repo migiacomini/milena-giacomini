@@ -29,11 +29,12 @@ import Layout from '../layouts/Layout.astro';
   const element = document.getElementById("typing-text");
 
   if (element) {
+    const el = element; // narrow for closures
     let index = 0;
 
     function type() {
       if (index < text.length) {
-        element.textContent += text.charAt(index);
+        el.textContent += text.charAt(index);
         index++;
         setTimeout(type, 40);
       }
